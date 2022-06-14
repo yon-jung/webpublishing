@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    box-sizing: border-box;
+    font-family: 'NanumSquare';
+}
+@media ( min-width: 1024px ){
+.hero-header {
+    position: relative;
+}
+.background {
+    height: 100vh;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter:brightness(50%);
+    position: relative;
+}
+.head {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(233, 233, 233, 0.521);
+    display: inline;
+    position: absolute;
+    
+}
+.logo {
+    position: static;
+    float: left;
+    filter:contrast(100%);
+    margin: 10px;
+}
+.login {
+    position: static;
+    float: right;
+    filter: brightness(100%);
+    margin: 10px;
+}
+
+.nav {
+    position: relative;
+    left: 60%;
+    top: 40%;
+    
+}
+.nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    font-weight: 700;
+    filter: brightness(100%);
+    padding: 30px;
+}
+.nav a:hover {
+    color: #fff200;
+}
+form {
+    position: absolute;
+    display: inline;
+    background-color: white;
+    width: 1000px;
+    height: 72px;
+    top: 80%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    box-shadow: 4px 16px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+}
+.input1 {
+    background-color: rgb(255, 255, 255);
+    width : 888px;
+    height: 72px;
+    border: 0px;
+    border-radius: 40px 0px 0px 40px;
+    outline: none;
+    color:(#7B7B7B); 
+    font-size: 24px;
+    padding-left: 32px;
+    float: left;
+}
+.input2 {
+    background-color: rgb(255, 255, 255);
+    width : 72px;
+    height : 72px;
+    border: 0px;
+    border-radius: 0px 40px 40px 0px;
+    outline: none;
+    color:(#970f0f); 
+    font-size: 24px;
+    float: right;
+    padding:16px;
+}
+/*이 지역 HOT 매장 추천*/
+.body1 {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.36);
+}
+.title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: greenyellow;
+}
+.title img {
+    display: inline;
+    width:20px; 
+    height:20px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+    
+}
+.highlight {
+    font-size: 28px;
+    margin-left: 120px;
+    display: inline-block; 
+    position: relative;
+    text-decoration: none;
+}
+.content1 {
+
+    
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.box1 {
+    display: inline-block;
+    width:280px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0px;
+    font-size: 0px;
+    text-align: left;
+}
+.description {
+    border-radius: 0px 0px 16px 16px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: rgb(255, 255, 255);
+}
+.box1 h2 {
+    width: 240px;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+.box1 p {
+    width: 240px;
+    font-size: 16px;
+}
+
+div{cursor: pointer;}
+div:hover .highlight:after{
+    width:100%;
+}
+.highlight:after{
+content:"";
+width: 0;
+height: 10px;
+display: inline-block;
+background: #e1ff00;
+position: absolute;
+bottom:0;
+left:0;
+z-index:-1;
+transition: 0.2s all;
+}
+.body2 {
+    height: 100vh;
+    background-color: rgba(226, 232, 199, 0.36);
+}
+.content2 {
+    width: 1208px;
+    height: 660px;
+    margin: auto;
+}
+.box2 {
+    width: 586px;
+    height: 262px;
+    background-color: #f200ff;
+    border-radius: 16px;
+    float: left;
+    margin: 8px;
+    position:relative;
+}
+
+.box3_1 {
+    width: 285px;
+    height: 366px;
+    background-color: greenyellow;
+    float: left;
+    border-radius: 16px;
+    margin: 8px;
+    position:relative;
+}
+.box3_2 {
+    width: 285px;
+    height: 366px;
+    background-color: greenyellow;
+    float: left;
+    border-radius: 16px;
+    margin: 8px;
+    position:relative;
+}
+.box2 p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    position: absolute;
+    display: inline;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    font-weight: 300;
+    line-height: 36px;
+}
+.box3_1 p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    width:fit-content;
+    height: fit-content;
+    position: absolute;
+    display: inline;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    font-weight: 300;
+}
+.box3_2 p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    width:fit-content;
+    height: fit-content;
+    position: absolute;
+    display: inline;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    font-weight: 300;
+    line-height: 36px;
+}
+/*실시간 SNS 신상 맛집 TOP 4*/
+.body3 {
+    height: 100vh;
+    margin-top: 50px;
+}
+.content3 {
+    margin: auto;
+    background-color: #e1ff00;
+    width: 1200px;
+    height: 600px;
+}
+.top4 {
+    width: 300px;
+    height: 600px;
+    background-color: #f200ff;
+    position: relative;
+    float: left;
+}
+.description2 {
+    height: 116px;
+    text-align: end;
+    display: inline;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    color: white;
+}
+.p1 {
+    color: rgba(228, 228, 228, 1);
+    line-height: 25px;
+    font-size: 21px;
+}
+.p2 {
+    font-size: 24px;
+    line-height: 29px;
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.p3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4E4E4;
+}
+.top4:hover {
+    filter:brightness(150%);
+    transition: 0.9s all;
+}
+
+.body4 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(226, 232, 199, 0.36);
+}
+/*식신 X*/
+.content4 {
+    width: 50%;
+    float: left;
+    margin: 0;
+    
+    
+}
+.tabs {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 590px;
+    border-radius: 16px 16px 0px 0px;
+    margin-left: 120px;
+}
+.tab_item {
+    width: calc(100%/2);
+    height: 50px;
+    background-color: #f8f8f8;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    border-radius: 16px 0px 0px 0px;
+    }
+.tab_item:hover {
+    opacity: 0.75;
+    }
+
+
+input[name="tab_item"] {
+    display: none;
+    }
+
+.tab_content {
+    display: none;
+    clear: both;
+    overflow: hidden;
+    }
+
+
+#kakao:checked ~ #kakao_content,
+#naver:checked ~ #naver_content{
+    display: block;
+    background-color: #fff0CD;
+    }
+
+.tabs input:checked + .tab_item {
+    background-color: #333333;
+    color: rgb(45, 45, 45);
+    background-color: #fff0CD;
+    }
+.siksinx_1 {
+    width: 264px;
+    height: 284px;
+    background-color: 
+rgb(255, 231, 176);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+.siksinx_2 {
+    width: 264px;
+    height: 284px;
+    background-color: 
+    rgb(255, 231, 176);
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+.siksin_1 img {
+    margin-left: 33px;
+}
+.siksin_1 p {
+    text-align: center;
+    margin: 0;
+    background-color: #970f0f;
+}
+/*맛집 생생후기*/
+.sns {
+    width: 600px;
+    height: 390px;
+    background-color: #ffe6b3;
+    margin-left: 120px;
+    border-radius: 12px;
+}
+.review {
+width: 250px;
+height: 175px;
+background-color: #ffe6aa;
+font-weight: bold;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 20px;
+margin-bottom: 0;
+
+}
+.review p {
+width: 261px;
+font-size: 18px;
+}
+.footer{
+background-color: #7B7B7B;
+color: rgb(179, 179, 179);
+margin: 0;
+text-align: center;
+padding: 30px;
+}
+.footer p {
+font-size: 16px;
+}
+.clearfix {
+clear: both;
+}}
+
+@media ( min-width: 768px ){
+
+}
